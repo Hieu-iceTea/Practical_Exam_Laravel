@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ProductRequest;
 use App\Model\Product;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class ProductController extends Controller
@@ -13,12 +13,14 @@ class ProductController extends Controller
      * Display a listing of the resource.
      *
      */
-    public function index(Request $request)
+    public function index(ProductRequest $request)
     {
         $id = $request->id;
         $name = $request->name;
 
-        $products = DB::table('product')->where('name', 'like', '%' . $name . '%')
+        $products = DB::table('product')
+            ->where('name', 'like', '%' . $name . '%')
+            ->where('deleted', false)
             ->orderByDesc('product_id')
             ->get();
 
@@ -45,7 +47,7 @@ class ProductController extends Controller
      *
      * @param \Illuminate\Http\Request $request
      */
-    public function store(Request $request)
+    public function store(ProductRequest $request)
     {
         $product = new Product();
 
@@ -87,7 +89,7 @@ class ProductController extends Controller
      * @param \Illuminate\Http\Request $request
      * @param int $id
      */
-    public function update(Request $request, $id)
+    public function update(ProductRequest $request, $id)
     {
         Product::all()->where('product_id', $id)
             ->first()
@@ -109,7 +111,9 @@ class ProductController extends Controller
     {
         Product::all()->where('product_id', $id)
             ->first()
-            ->delete();
+            ->update([
+                'deleted' => true,
+            ]);
 
         return redirect()->route('admin.product')->with('notification', 'Product deleted');
     }

@@ -37,12 +37,12 @@
                 <td>{{ number_format($product->price, 0, ',', '.') }}</td>
                 <td>{{ $product->description }}</td>
                 <td>
-                    <a href="admin/product/edit/{{ $product->product_id }}" class="btn btn-warning">Edit</a>
+                    <a href="admin/product/edit/{{ $product->product_id }}" class="btn btn-sm btn-warning">Edit</a>
 
                     <form class="d-inline" action="admin/product/delete/{{ $product->product_id }}" method="post">
                         @csrf
                         {{ method_field('DELETE') }}
-                        <button type="submit" class="btn btn-danger"
+                        <button type="submit" class="btn btn-sm btn-danger"
                                 onclick="return confirm('Are you sure you want to delete the product?')">
                             Delete
                         </button>

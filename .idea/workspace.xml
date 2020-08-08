@@ -6,25 +6,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc473297-98f8-4633-9db1-d66067585ac8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_Docs/DataBase_Script/ALL_ScriptDatabe_Create_Insert.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Model/Product.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-4.4.1-dist.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fontawesome-free-5.12.1-web.all.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/my_style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/bootstrap-4.4.1-dist.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-3.4.1.slim.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/my_scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/errors/all_errors.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/layout/master.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/notifications/all_notifications.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/product/add_edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/product/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ProductRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/my_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/my_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/product/add_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/add_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/product/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +171,7 @@
       <option name="presentableId" value="Default" />
       <updated>1596852271942</updated>
       <workItem from="1596852273013" duration="138000" />
-      <workItem from="1596852840871" duration="10527000" />
+      <workItem from="1596852840871" duration="12365000" />
     </task>
     <servers />
   </component>
@@ -209,22 +197,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738/1366.-136.1440.870@0.0.1366.738" timestamp="1596852944582" />
-    <state width="905" height="182" key="GridCell.Tab.0.bottom" timestamp="1596853738732">
+    <state width="905" height="182" key="GridCell.Tab.0.bottom" timestamp="1596864051166">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.-136.1440.870@0.0.1366.738" timestamp="1596853738732" />
-    <state width="905" height="182" key="GridCell.Tab.0.center" timestamp="1596853738732">
+    <state width="905" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.-136.1440.870@0.0.1366.738" timestamp="1596864051166" />
+    <state width="905" height="182" key="GridCell.Tab.0.center" timestamp="1596864051166">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="182" key="GridCell.Tab.0.center/0.0.1366.738/1366.-136.1440.870@0.0.1366.738" timestamp="1596853738732" />
-    <state width="905" height="182" key="GridCell.Tab.0.left" timestamp="1596853738731">
+    <state width="905" height="182" key="GridCell.Tab.0.center/0.0.1366.738/1366.-136.1440.870@0.0.1366.738" timestamp="1596864051166" />
+    <state width="905" height="182" key="GridCell.Tab.0.left" timestamp="1596864051165">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="182" key="GridCell.Tab.0.left/0.0.1366.738/1366.-136.1440.870@0.0.1366.738" timestamp="1596853738731" />
-    <state width="905" height="182" key="GridCell.Tab.0.right" timestamp="1596853738732">
+    <state width="905" height="182" key="GridCell.Tab.0.left/0.0.1366.738/1366.-136.1440.870@0.0.1366.738" timestamp="1596864051165" />
+    <state width="905" height="182" key="GridCell.Tab.0.right" timestamp="1596864051166">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="182" key="GridCell.Tab.0.right/0.0.1366.738/1366.-136.1440.870@0.0.1366.738" timestamp="1596853738732" />
+    <state width="905" height="182" key="GridCell.Tab.0.right/0.0.1366.738/1366.-136.1440.870@0.0.1366.738" timestamp="1596864051166" />
     <state x="517" y="292" key="NewPhpFileDialog" timestamp="1596853115765">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

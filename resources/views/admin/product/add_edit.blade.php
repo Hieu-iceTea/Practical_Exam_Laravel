@@ -10,14 +10,14 @@
         @csrf
         <div class="form-group">
             <label for="name">Name</label>
-            <input required type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp"
+            <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp"
                    value="{{ old('name') ??  $product->name ?? '' }}">
             <small id="nameHelp" class="form-text text-muted">What is your product's name.</small>
         </div>
 
         <div class="form-group">
             <label for="price">Price</label>
-            <input required type="text" class="form-control" id="price" name="price"
+            <input type="text" class="form-control" id="price" name="price"
                    value="{{ old('price') ?? $product->price  ?? '' }}">
         </div>
 
@@ -31,7 +31,7 @@
             {{ request()->segment(3) == 'add' ? 'Add new' : 'Edit' }} product
         </button>
 
-        <a href="" class="btn btn-danger">Cancel</a>
+        <a href="admin/product" class="btn btn-danger">Cancel</a>
     </form>
 
 @endsection

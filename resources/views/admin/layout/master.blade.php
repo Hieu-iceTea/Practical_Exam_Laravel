@@ -14,7 +14,7 @@
     <!-- Style Sheet -->
     <link rel="stylesheet" type="text/css" href="css/fontawesome-free-5.12.1-web.all.css"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap-4.4.1-dist.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/myStyle.css"/>
+    <link rel="stylesheet" type="text/css" href="css/my_style.css"/>
 </head>
 <body>
 <div class="container-fluid m-0 p-0">
@@ -62,7 +62,7 @@
 
         <div class="row mt-5">
 
-            <div class="col-3">
+            <div class="col-lg-3 vertical_menu mb-5">
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link" href="admin">Dashboard</a>
@@ -79,7 +79,7 @@
                 </ul>
             </div>
 
-            <div class="col-9">
+            <div class="col-lg-9">
                 @include('admin.errors.all_errors')
                 @include('admin.notifications.all_notifications')
 
@@ -94,7 +94,7 @@
 <script src="js/jquery-3.4.1.slim.min.js "></script>
 <script src="js/popper.min.js "></script>
 <script src="js/bootstrap-4.4.1-dist.min.js "></script>
-<script src="js/myScripts.js "></script>
+<script src="js/my_scripts.js "></script>
 
 </body>
 </html>
